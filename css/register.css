@@ -1,0 +1,149 @@
+.main-container{
+    width: 100%;
+    min-height: 100%;
+    background-color: var(--primary-color);
+    position: relative;
+}
+
+.main-container .nav-bar .container span{
+    border: 2px solid #fff;
+    font-size: 1.2em;
+    padding: 0 10px;
+    margin-right: 10px;
+    color: rgb(196, 191, 191);
+    font-weight: 700;
+}
+.main-container h2{
+    max-width: 30%;
+    margin: 3em auto;
+}
+.register-form .register-container{
+    padding: 30px 30px;
+    background-color: #fff;
+    width: 70%;
+    margin: 0 auto;
+    
+}
+.register-form .register-container .grid .card h1 i{
+   border-radius: 50%;
+   border: 2px solid var(--primary-color);
+   padding: 10px;
+   margin-right: 5px;
+   color: var(--primary-color);
+}
+.register-form .register-container .grid .card p::after{
+    content: '';
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0 2em 0;
+    border-bottom: 1px solid #ccc;
+    font-weight: 500;
+}
+
+.register-form .register-container .grid .register{
+    justify-self: start;
+    align-self: start;
+    width: 100%;
+}
+.register label{
+    display: block;
+}
+.register div{
+    margin: 1em 0;
+}
+.register input[type='text'],
+.register input[type='email'],
+.register select,
+.login input[type='email'],
+.login input[type='password'] {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+}
+.register input[type='text']:focus,
+.register input[type='email']:focus,
+.register select:focus,
+.login input[type='email']:focus,
+.login input[type='password']:focus{
+    outline: 2px solid var(--primary-color);
+}
+/*Login form*/
+.heading{
+    text-align: center;
+    color: #fff;
+}
+.heading .container .single{
+    border: 2px solid #fff;
+    max-width: 80px;
+    margin: 1em auto 0 auto;
+    font-family: cursive;
+}
+.container .login{
+    width: 50%;
+    margin-bottom: 1em;
+    position: relative;
+}
+.login .form-control label{
+    font-weight: 600;
+    color: var(--dark-color);
+}
+.login .form-control .icon{
+    position: absolute;
+    left: 40px;
+    top: 140px;
+    font-size: 1em;
+    color: var(--primary-color);
+}
+.login .form-control .icon::after{
+    content: '|';
+    color: #ccc;
+}
+.login .pwd .icon{
+    position: absolute;
+    left: 40px;
+    top: 255px;
+    font-size: 1em;
+    color: var(--primary-color);
+}
+.login .form-control input{
+    padding-left: 3em;
+    font-size: 1.2em;
+}
+.btn-login{
+    width: 100%;
+    font-size: 1.3em;
+}
+
+/* Forgot password */
+.fogot-pwd-form .login .form-control .icon{
+    position: absolute;
+    left: 40px;
+    top: 200px;
+    font-size: 1em;
+    color: var(--primary-color);
+}
+
+@media(max-width: 750px){
+    .main-container .nav-bar{
+        height: 200px;
+    }
+
+    .main-container h2{
+        max-width: 60%;
+        margin: 2em auto;
+    }
+    .register-form .register-container {
+        width: 90%;
+    }
+    .register-form .container .grid {
+        grid-template-columns: 1fr;
+    }
+    .container .login{
+        width: 100%;
+    }
+    
+}
+

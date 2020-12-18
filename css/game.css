@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.game-container{
+    width: 500px;
+    height: 200px;
+    border: 2px solid rgb(70, 138, 155);
+    overflow: hidden;
+    margin: 3em 0 0 3em;
+    background: url("../images/heroku_img2.png"), rgba(112, 114, 114, 0.5);
+    background-position: right;
+    background-size: cover;
+    position: relative;
+}
+.game-container #image1{
+    width: 100%; 
+    position: absolute; 
+    left: 0;
+    animation: block 2s linear infinite;
+}
+.game-container #image2{
+    width: 100%; 
+    position: absolute; 
+    right: 50px;
+    animation: image 4s linear infinite;
+}
+.character{
+    width: 20px;
+    height: 50px;
+    background-color: #a52a2a;
+    position: relative;
+    top: 150px;
+    z-index: 1111;
+    animation: jump 500ms linear infinite;
+}
+.block{
+    width: 20px;
+    height: 70px;
+    background-color: #ffff00;
+    position: relative;
+    top: 130px;
+    left: 450px;
+    z-index: 1111;
+    animation: block 2s linear infinite;
+}
+
+/*Animations*/
+@keyframes block{
+    0%{
+        left: 480px;
+    }
+    100%{
+        left: -50px;
+    }
+}
+@keyframes image{
+    0%{
+        right: 480px;
+    }
+    100%{
+        right: -50px;
+    }
+}
+@keyframes jump{
+    0%{
+        transform: translateX(20px);
+        /* transform: translateY(-20px); */
+        top: 150px;
+    }
+    30%{
+        top: 100px;
+    }
+    70%{
+        top: 100px;
+    }
+    100%{
+        top: 150px;
+    }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mywebsite | Sign Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="nav-bar">
+            <div class="container flex-container">
+                <h1 id="heroku" title="Mywebsite"><span>h</span>Mywebsite</h1>
+                <nav>
+                    <ul>
+                        <li><p>Already have a account?</p></li>
+                        <li><a href="login.html" class="btn btn-dark">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <h2 class="text-center text-light md">Sign up for free and experience Mywebsite today</h2>
+
+        <!-- Register form -->
+        <section class="register-form">
+            <div class="register-container">
+            <div class=" container grid">
+                <div class="card p-3">
+                    <div>
+                        <h1 class="text-primary md"><i class="fas fa-user"></i>Free account</h1>
+                        <p class="sm">Create apps, connect databases and add-on services, and collaborate on your apps, for free.</p>
+                    </div>
+                    <div>
+                        <h1 class="text-primary md"><i class="fas fa-user"></i>Your app platform</h1>
+                        <p class="sm">A platform for apps, with app management & instant scaling, for development and production.</p>
+                    </div>
+                    <div>
+                        <h1 class="text-primary md"><i class="fas fa-user"></i>Deploy now</h1>
+                        <p class="sm">Go from code to running app in minutes. Deploy, scale, and deliver your app to the world.</p>
+                    </div>
+                </div>
+                <div class="card register">
+                    <form action="register.html" method="post">
+                        <div>
+                            <label>First name<span class="text-danger sm"><sup>*</sup></span></label>
+                            <input type="text" name="first_name" placeholder="First name">
+                        </div>
+                        <div>
+                            <label>Last name<span class="text-danger"><sup>*</sup></span></label>
+                            <input type="text" name="last_name" placeholder="Last name">
+                        </div>
+                        <div>
+                            <label>Email address<span class="text-danger"><sup>*</sup></span></label>
+                            <input type="email" name="last_name" placeholder="Email address">
+                        </div>
+                        <div>
+                            <label>Company address<span class="text-danger"><sup>*</sup></span></label>
+                            <input type="text" name="last_name" placeholder="Company address">
+                        </div>
+                        <div>
+                            <label>Role<span class="text-danger"><sup>*</sup></span></label>
+                            <select name="role">
+                                <option value="0">Role</option>
+                                <option value="1">Agency / Partner Developer</option>
+                                <option value="1">Hobbyist</option>
+                                <option value="1">Professional Developer</option>
+                                <option value="1">Student</option>
+                                <option value="1">Technology/Business Manager</option>
+                            </select>
+                        </select>
+                        </div>
+                        <div>
+                            <label>Country<span class="text-danger"><sup>*</sup></span></label>
+                            <select name="role">
+                                <option value="0">Country</option>
+                                <option value="1">Agency / Partner Developer</option>
+                                <option value="1">Hobbyist</option>
+                                <option value="1">Professional Developer</option>
+                                <option value="1">Student</option>
+                            </select>
+                        </select>
+                        </div>
+                        <div>
+                            <label>Primary development language <span class="text-danger"><sup>*</sup></span></label>
+                            <select name="role">
+                                <option value="0">Primary development language </option>
+                                <option value="1">PHP</option>
+                                <option value="1">Ruby</option>
+                                <option value="1">Go</option>
+                                <option value="1">Java</option>
+                                <option value="1">Clojure</option>
+                                <option value="1">Python</option>
+                                <option value="1">I use another language</option>
+                                <option value="1">I am not a developer</option>
+                            </select>
+                        </div>
+                        <center>
+                            <input type="submit" value="CREATE FREE ACCOUNT" class="btn btn-primary p-2 my-2">
+                        </center>
+                    </form>
+                    <p class="my-2">Signing up signifies that you have read and agree to the <a href="#" class="text-primary">Terms of Service</a> and our <a href="#" class="text-primary">Privacy Policy.</a></p>
+                </div>
+            </div>
+        </div>
+        </section>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,223 @@
+header{
+    height: 300px;
+}
+header .nav-bar{
+    width: 100%;
+    height: 35px;
+    background-color: var(--dark-color);
+    color: #fff;
+    font-size: 11px;
+}
+
+/* newswatch-awards */
+.newswatch-subhead{
+    width: 80%;
+    margin: 3em auto;
+}
+.newswatch-subhead h1{
+    float: left;
+    font-weight: 600;
+}
+.newswatch-subhead .container img{
+    width: 100%;
+    height: 15vh;
+}
+
+/* Nav Bar*/
+header .nav-bar2{
+    width: 95%;
+    margin: 0 auto;
+}
+header .nav-bar2 ul a{
+    color: #000;
+    text-transform: uppercase;
+}
+header .nav-bar2 ul a:hover{
+    border-bottom: 2px solid var(--secondary-color);
+}
+.nest .nested{
+    display: none;
+}
+.nest .nested li{
+    padding: 10px;
+    background-color:#fff;
+}
+.nest:hover .nested{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    white-space: nowrap;
+    position: relative;
+}
+
+.nested li a:hover{
+    color: var(--secondary-color);
+}
+/*.nav-bar2 nested ul li a styling*/
+.nested li ul{
+    display: none;
+}
+.nested li{
+    position: relative;
+}
+.nested li:hover ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: -100px;
+    top: 20px;
+}
+.nested li .inner-nested{
+    position: absolute;
+    bottom: 200px;
+    left: 190px;
+    z-index: 1111;
+    width: 130%;
+    padding: 10px;
+}
+.nested:hover .input{
+    width: 100%;
+    padding: 5px;
+    font-size: 1.2em;
+    color: var(--dark-color);
+}
+/* Post-video section */
+.post-video{
+    width: 100%;
+    /* height: 500px; */
+}
+.post-video > div{
+    margin: 0 auto;
+    width: 80%;
+}
+.post-video > div small,
+small a{
+    color: #fff;
+    padding: 0 10px;
+}
+.post-video > div small a:hover{
+    color: var(--primary-color);
+}
+
+/* post */
+.post .grid{
+    grid-template-columns: 2fr 1fr;
+}
+.post .grid h1{
+    font-size: 3em;
+}
+
+.share-links .container{
+    border: 1px solid rgb(233, 230, 230);
+    width: 70%;
+    height: 3.5rem;
+}
+.share-links .flex-container{
+    justify-content: stretch;
+    align-items: stretch;
+}
+.share-links .container p{
+    padding: 0.6rem;
+    margin: 10px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.share-links .container p a{
+    color: #fff;
+}
+
+/* articles */
+.articles-heading .container small{
+    color: #ccc;
+}
+.articles-heading article h1 a:hover{
+    color: var(--primary-color);
+}
+
+/* related-articles */
+.related-articles h3{
+    float: left;
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+}
+.related-articles .author p{
+    border-bottom: 2px solid var(--dark-color);
+    padding: 11px;
+}
+.related-articles div p{
+    font-size: 1.2em;
+}
+.related-articles div p a:hover{
+    color: var(--primary-color);
+}
+
+/* Blog footer*/
+.blog-footer{
+    width: 100%;
+    /* height: 500px; */
+    background-color: #222222;
+}
+.blog-footer .first{
+    width: 60%;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.blog-footer .middle{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid rgb(233, 232, 232);
+}
+.blog-footer .grid-3{
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.blog-footer .grid-3 img{
+    width: 20vw;
+}
+.blog-footer .last-child{
+    align-self: start;
+}
+.blog-footer .last-child a{
+    background-color: #3b3b3b;
+    border-radius: 10px;
+    padding: 15px;
+}
+.blog-footer .last-child a:hover{
+    color: var(--primary-color);
+    transform: scale(0.98);
+}
+.blog-footer .last{
+    width: 100%;
+    background-color: var(--dark-color);
+    margin-top: 2em;
+    font-size: 10px;
+}
+.blog-footer .last a:hover{
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px){
+    header .nav-bar{
+        height: 100px;
+    }
+    .share-links .container{
+        width: 80%;
+        height: 4.5rem;
+    }
+    .blog-footer .grid-3{
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+        overflow: hidden;
+    }
+    .blog-footer .last{
+        height: 6em;
+    }
+    .blog-footer .last .flex-container{
+        flex-direction: column;
+        overflow: hidden;
+    }
+}
